@@ -1,66 +1,150 @@
 import React from 'react';
-import { Code2, Database, Globe, Smartphone, Server, Palette } from 'lucide-react';
+import type { ReactElement } from 'react';
+import type { LucideIcon } from 'lucide-react';
+import { Code2, Cpu, Server, Brain, Users } from 'lucide-react';
 
-const Skills = () => {
-  const skillCategories = [
+interface Skill {
+  name: string;
+  level: number;
+  tags: string[];
+}
+
+interface SkillCategory {
+  title: string;
+  icon: LucideIcon;
+  skills: Skill[];
+}
+
+const Skills = (): ReactElement => {
+  const skillCategories: SkillCategory[] = [
     {
-      title: 'Frontend',
-      icon: <Globe className="w-6 h-6" />,
+      title: 'Desenvolvimento',
+      icon: Code2,
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'TypeScript', level: 85 },
-        { name: 'Tailwind CSS', level: 88 },
-        { name: 'Next.js', level: 82 }
+        { 
+          name: 'Python', 
+          level: 90, 
+          tags: ['Automação', 'Data Science', 'FastAPI', 'Django'] 
+        },
+        { 
+          name: 'JavaScript/TypeScript', 
+          level: 85, 
+          tags: ['React', 'Node.js', 'Next.js', 'Tailwind CSS'] 
+        },
+        { 
+          name: 'SQL', 
+          level: 88, 
+          tags: ['MySQL', 'PostgreSQL', 'SQL Server', 'SQLite'] 
+        },
+        { 
+          name: 'Git & DevOps', 
+          level: 85, 
+          tags: ['GitHub', 'GitLab', 'CI/CD', 'Docker'] 
+        }
       ]
     },
     {
-      title: 'Backend',
-      icon: <Server className="w-6 h-6" />,
+      title: 'Cloud & Infraestrutura',
+      icon: Server,
       skills: [
-        { name: 'Node.js', level: 87 },
-        { name: 'Python', level: 83 },
-        { name: 'Express', level: 85 },
-        { name: 'FastAPI', level: 80 }
+        { 
+          name: 'Microsoft Azure', 
+          level: 85, 
+          tags: ['AZ-900', 'Cloud Services', 'IaaS', 'PaaS'] 
+        },
+        { 
+          name: 'Security', 
+          level: 80, 
+          tags: ['SC-900', 'Identity', 'Compliance', 'IAM'] 
+        },
+        { 
+          name: 'Infraestrutura', 
+          level: 85, 
+          tags: ['Windows Server', 'Redes', 'Active Directory'] 
+        },
+        { 
+          name: 'Virtualização', 
+          level: 80, 
+          tags: ['VMware', 'Hyper-V', 'Containers'] 
+        }
       ]
     },
     {
-      title: 'Database',
-      icon: <Database className="w-6 h-6" />,
+      title: 'Automação Industrial',
+      icon: Cpu,
       skills: [
-        { name: 'PostgreSQL', level: 85 },
-        { name: 'MongoDB', level: 80 },
-        { name: 'Redis', level: 75 },
-        { name: 'Supabase', level: 88 }
+        { 
+          name: 'PLCs', 
+          level: 90, 
+          tags: ['Siemens', 'Allen-Bradley', 'Mitsubishi', 'Ladder'] 
+        },
+        { 
+          name: 'Robótica', 
+          level: 85, 
+          tags: ['FANUC', 'ABB', 'Programação', 'Manutenção'] 
+        },
+        { 
+          name: 'SCADA', 
+          level: 85, 
+          tags: ['Elipse', 'WonderWare', 'Indusoft', 'HMI'] 
+        },
+        { 
+          name: 'Eletrônica', 
+          level: 85, 
+          tags: ['Microcontroladores', 'Sensores', 'Instrumentação'] 
+        }
       ]
     },
     {
-      title: 'Mobile',
-      icon: <Smartphone className="w-6 h-6" />,
+      title: 'Data Science & IA',
+      icon: Brain,
       skills: [
-        { name: 'React Native', level: 82 },
-        { name: 'Flutter', level: 78 },
-        { name: 'iOS (Swift)', level: 70 },
-        { name: 'Android (Kotlin)', level: 72 }
+        { 
+          name: 'Machine Learning', 
+          level: 80, 
+          tags: ['Scikit-learn', 'TensorFlow', 'Modelos Preditivos'] 
+        },
+        { 
+          name: 'Data Analysis', 
+          level: 85, 
+          tags: ['Pandas', 'NumPy', 'Jupyter', 'Visualização'] 
+        },
+        { 
+          name: 'Power BI', 
+          level: 90, 
+          tags: ['DAX', 'ETL', 'Dashboards', 'Relatórios'] 
+        },
+        { 
+          name: 'Excel Avançado', 
+          level: 85, 
+          tags: ['VBA', 'Macros', 'Fórmulas', 'Pivot Tables'] 
+        }
       ]
     },
     {
-      title: 'DevOps',
-      icon: <Code2 className="w-6 h-6" />,
+      title: 'Gestão & Metodologias',
+      icon: Users,
       skills: [
-        { name: 'Docker', level: 85 },
-        { name: 'AWS', level: 80 },
-        { name: 'CI/CD', level: 82 },
-        { name: 'Kubernetes', level: 75 }
-      ]
-    },
-    {
-      title: 'Design',
-      icon: <Palette className="w-6 h-6" />,
-      skills: [
-        { name: 'Figma', level: 85 },
-        { name: 'Adobe XD', level: 80 },
-        { name: 'UI/UX', level: 88 },
-        { name: 'Prototyping', level: 83 }
+        { 
+          name: 'Gestão de Projetos', 
+          level: 85, 
+          tags: ['Scrum', 'Kanban', 'PMBOK', 'Agile'] 
+        },
+        { 
+          name: 'Documentação', 
+          level: 85, 
+          tags: ['Markdown', 'UML', 'Diagramas', 'Wiki'] 
+        },
+        { 
+          name: 'SAP', 
+          level: 80, 
+          tags: ['SAP Básico', 'PM', 'MM', 'SD'] 
+        },
+        { 
+          name: 'Liderança', 
+          level: 85, 
+          tags: ['Gestão de Equipes', 'Mentoria', 'Treinamentos'] 
+        }
       ]
     }
   ];
@@ -82,7 +166,7 @@ const Skills = () => {
             <div key={index} className="bg-slate-700/50 rounded-xl p-6 backdrop-blur-sm border border-slate-600/30 hover:bg-slate-700/70 transition-all duration-300 hover:transform hover:scale-105">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mr-4">
-                  {category.icon}
+                  {category.icon && React.createElement(category.icon, { className: "w-6 h-6" })}
                 </div>
                 <h3 className="text-xl font-semibold text-white">{category.title}</h3>
               </div>
