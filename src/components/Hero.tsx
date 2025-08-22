@@ -35,14 +35,13 @@ const Hero = () => {
               <ArrowDown className="ml-2 w-5 h-5" />
             </a>
             
-            <a 
-              href="/cv.pdf" 
-              target="_blank"
+            <button
+              onClick={() => window.open('/curriculum-wagner-freitas.pdf', '_blank')}
               className="inline-flex items-center px-8 py-4 border-2 border-slate-600 hover:border-slate-500 text-slate-300 hover:text-white font-semibold rounded-lg transition-all duration-300 hover:bg-slate-800"
             >
               <Download className="mr-2 w-5 h-5" />
-              Download CV
-            </a>
+              Visualizar Currículo
+            </button>
           </div>
         </div>
       </div>

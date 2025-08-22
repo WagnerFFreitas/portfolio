@@ -12,100 +12,107 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    company: 'MULT TEC Assistência técnica',
+    company: 'MULT TEC Assistência Técnica',
     role: 'Técnico de TI e Eletrônica',
     period: '2020 - Atual',
-    location: 'Belo Horizonte, MG',
-    description: 'Especialista em sistemas de CFTV, suporte técnico em TI e manutenção eletrônica.',
+    location: 'Rio de Janeiro, RJ',
+    description: 'Especialista em sistemas de CFTV, suporte técnico em TI e manutenção eletrônica com foco em soluções de segurança e monitoramento.',
     responsibilities: [
-      'Instalação e manutenção de sistemas de CFTV',
-      'Suporte técnico em TI para clientes',
-      'Diagnóstico e reparo de equipamentos eletrônicos'
+      'Diagnóstico e resolução de problemas de hardware e software para clientes',
+      'Implementação e manutenção de sistemas de CFTV para segurança e monitoramento',
+      'Reparos complexos em eletrônica em nível de componente',
+      'Suporte técnico especializado em equipamentos de segurança'
     ]
   },
   {
-    company: 'Suporte Informática Ltda.',
-    role: 'Técnico de Suporte',
+    company: 'Suporte Informática Ltda. (Grupo Globex - Ponto Frio)',
+    role: 'Técnico de Software, Rede e Help Desk',
     period: '2018 - 2020',
-    location: 'Belo Horizonte, MG',
-    description: 'Atuação como técnico de eletrônica, software, redes e Help Desk para o grupo Globex (Ponto Frio).',
+    location: 'Rio de Janeiro, RJ',
+    description: 'Atuação como técnico de eletrônica, software, rede e Help Desk, prestando suporte tanto no depósito quanto nas lojas do grupo.',
     responsibilities: [
-      'Suporte técnico em hardware e software',
-      'Manutenção de redes e sistemas',
-      'Atendimento em depósito e lojas do grupo'
-    ]
-  },
-  {
-    company: 'Eletrônica Alfa',
-    role: 'Técnico em Áudio e Vídeo',
-    period: '2016 - 2018',
-    location: 'Belo Horizonte, MG',
-    description: 'Especialização em manutenção e reparo de equipamentos de áudio e vídeo.',
-    responsibilities: [
-      'Reparo de equipamentos de áudio profissional',
-      'Manutenção de sistemas de vídeo',
-      'Instalação de sistemas de som'
+      'Suporte técnico (Help Desk) para usuários nas lojas e depósito central',
+      'Manutenção de infraestrutura de rede local e configuração de ativos',
+      'Resolução de incidentes de software e conectividade',
+      'Garantia da operacionalidade dos sistemas corporativos'
     ]
   },
   {
     company: 'Data Duque Informática',
-    role: 'Instrutor de TI',
-    period: '2014 - 2016',
-    location: 'Belo Horizonte, MG',
-    description: 'Instrutor de cursos de informática e tecnologia.',
+    role: 'Instrutor de TI e Técnico de Manutenção',
+    period: '2016 - 2018',
+    location: 'Rio de Janeiro, RJ',
+    description: 'Instrutor de cursos de informática e responsável pela manutenção de equipamentos e implementação de redes.',
     responsibilities: [
-      'Ensino de pacote Office, CorelDraw e Photoshop',
-      'Instrutor de Access Básico e DOS',
-      'Manutenção de equipamentos e redes',
-      'Desenvolvimento de material didático'
+      'Ministração de treinamentos em Pacote Office, CorelDraw e Photoshop',
+      'Ensino de Access Básico e sistemas operacionais (DOS)',
+      'Montagem e manutenção de computadores para clientes corporativos',
+      'Implementação de redes estruturadas e capacitação de dezenas de alunos'
     ]
   },
   {
     company: 'Externato Cruzeiro do Sul',
     role: 'Professor',
-    period: '2012 - 2014',
-    location: 'Belo Horizonte, MG',
-    description: 'Professor do ensino fundamental e médio.',
+    period: '2014 - 2016',
+    location: 'Rio de Janeiro, RJ',
+    description: 'Professor do ensino fundamental até o segundo ano do ensino médio, desenvolvendo material didático e acompanhamento pedagógico.',
     responsibilities: [
-      'Ensino de disciplinas básicas',
-      'Desenvolvimento de material didático',
-      'Acompanhamento pedagógico'
+      'Ensino de disciplinas do ensino fundamental e médio',
+      'Desenvolvimento de material didático personalizado',
+      'Acompanhamento pedagógico individualizado',
+      'Gestão de turmas e avaliação de desempenho acadêmico'
+    ]
+  },
+  {
+    company: 'Eletrônica Alfa',
+    role: 'Técnico em Áudio e Vídeo',
+    period: '2012 - 2014',
+    location: 'Rio de Janeiro, RJ',
+    description: 'Especialização em manutenção e reparo de equipamentos de áudio e vídeo profissionais.',
+    responsibilities: [
+      'Reparo de equipamentos de áudio profissional',
+      'Manutenção de sistemas de vídeo e equipamentos audiovisuais',
+      'Diagnóstico de falhas em circuitos eletrônicos',
+      'Instalação e configuração de sistemas de som'
     ]
   },
   {
     company: 'Eletrônica Santa Helena',
     role: 'Técnico em Áudio e Vídeo',
     period: '2010 - 2012',
-    location: 'Belo Horizonte, MG',
-    description: 'Especialista em manutenção e reparo de equipamentos de áudio e vídeo.',
+    location: 'Rio de Janeiro, RJ',
+    description: 'Especialista em manutenção e reparo de equipamentos de áudio e vídeo com foco em soluções técnicas avançadas.',
     responsibilities: [
-      'Reparo de equipamentos de áudio',
-      'Manutenção de sistemas de vídeo',
-      'Instalação de equipamentos'
+      'Reparo especializado de equipamentos de áudio e vídeo',
+      'Manutenção preventiva e corretiva de sistemas audiovisuais',
+      'Instalação de equipamentos em ambientes comerciais',
+      'Suporte técnico para clientes corporativos'
     ]
   },
   {
     company: 'Microhard Informática',
     role: 'Técnico de Suporte',
     period: '2008 - 2010',
-    location: 'Belo Horizonte, MG',
-    description: 'Suporte técnico em informática e redes.',
+    location: 'Rio de Janeiro, RJ',
+    description: 'Suporte técnico especializado em informática, manutenção de equipamentos e implementação de redes estruturadas.',
     responsibilities: [
-      'Manutenção de computadores',
-      'Implementação de redes',
-      'Instalação de software'
+      'Manutenção de equipamentos de informática',
+      'Implementação e configuração de redes estruturadas',
+      'Instalação e configuração de software corporativo',
+      'Suporte técnico presencial e remoto'
     ]
   },
   {
     company: 'Curso Eletrohm',
-    role: 'Instrutor',
+    role: 'Instrutor de Equipamentos de Áudio',
     period: '2006 - 2008',
-    location: 'Belo Horizonte, MG',
-    description: 'Instrutor de cursos técnicos em eletrônica.',
+    location: 'Rio de Janeiro, RJ',
+    description: 'Instrutor especializado em cursos técnicos de eletrônica com foco em equipamentos de áudio profissional.',
     responsibilities: [
-      'Ensino de eletrônica básica',
-      'Instrução em equipamentos de áudio',
-      'Desenvolvimento de material didático'
+      'Ensino de eletrônica básica e avançada',
+      'Instrução especializada em equipamentos de áudio',
+      'Desenvolvimento de material didático técnico',
+      'Capacitação de técnicos em eletrônica de áudio'
     ]
   }
 ];
@@ -120,7 +127,7 @@ const Experience = (): ReactElement => {
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Mais de 15 anos de experiência em tecnologia, eletrônica e educação,
-            sempre buscando aprender e compartilhar conhecimento.
+            com especialização em sistemas de segurança, suporte técnico e desenvolvimento de soluções.
           </p>
         </div>
 
