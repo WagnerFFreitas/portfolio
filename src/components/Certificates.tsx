@@ -1,18 +1,18 @@
 import type { ReactElement } from 'react';
 import type { LucideIcon } from 'lucide-react';
-import { GraduationCap, Brain, Cloud, Code, Cog, Users } from 'lucide-react';
+import { GraduationCap, Brain, Cog } from 'lucide-react';
 
 interface BasicCertification {
   title: string;
   description: string;
-  document: string;
+  document?: string;
   type?: 'basic';
 }
 
 interface DetailedCertification {
   title: string;
   certifications: string[];
-  documents: string[];
+  documents?: string[];
   type?: 'detailed';
 }
 
@@ -25,7 +25,7 @@ interface CertificationSection {
 type Certifications = Record<string, CertificationSection>;
 
 const isBasicCertification = (item: BasicCertification | DetailedCertification): item is BasicCertification => {
-  return 'document' in item;
+  return 'document' in item || 'description' in item;
 };
 
 const isDetailedCertification = (item: BasicCertification | DetailedCertification): item is DetailedCertification => {
@@ -40,121 +40,13 @@ const Certificates = (): ReactElement => {
       items: [
         {
           title: "Engenharia da Computação",
-          description: "Diploma de graduação em engenharia da computação",
-          document: "Diploma de graduacao a engenharia da computacao.pdf"
+          description: "Bacharel em Engenharia da Computação pela Universidade Candido Mendes, Rio de Janeiro - RJ. Conclusão: 2024 | Colação de Grau: 2025",
+          document: "Diploma de graduação em engenharia da computação.pdf"
         },
         {
-          title: "Harvard CC50",
-          description: "Certificado de Introdução à Ciência da Computação - Harvard University",
-          document: "Certificado de Introducao da Ciencia da Computacao de Harvard_CC50 Fundacao.pdf"
-        }
-      ]
-    },
-    microsoft: {
-      title: "Certificações Microsoft",
-      icon: Cloud,
-      items: [
-        {
-          title: "Microsoft Azure",
-          certifications: [
-            "Azure Fundamentals (AZ-900)",
-            "Security, Compliance and Identity (SC-900) - 03/09/2022",
-            "Security, Compliance and Identity (SC-900) - 11/11/2023"
-          ],
-          documents: [
-            "Certificado KA Microsoft Azure Fundamentals AZ-900.pdf",
-            "Certificado KA Microsoft security_Compliance and identity fundamentals SC900 03092022.pdf",
-            "Certificado KA Microsoft security_Compliance and identity fundamentals SC900 11112023.pdf"
-          ]
-        }
-      ]
-    },
-    development: {
-      title: "Desenvolvimento",
-      icon: Code,
-      items: [
-        {
-          title: "Desenvolvimento Web",
-          certifications: [
-            "HTML e CSS (Cultura Educacional Brasil)",
-            "HTML e CSS Básico (EuCurso e AlfaMidia)",
-            "MySQL (EuCurso e AlfaMidia)",
-            "PHP (EuCurso e AlfaMidia)",
-            "Site com HTML, CSS e JavaScript (Escola do Trabalhador 4.0)"
-          ],
-          documents: [
-            "Certificado Cultura Educacional Brasil em HTML.pdf",
-            "Certificado EuCurso e AlfaMidia HTML e CSS basico.pdf",
-            "Certificado EuCurso e AlfaMidia de MySQL.pdf",
-            "Certificado EuCurso e AlfaMidia de PHP.pdf",
-            "Certificado Escola do trabalahdor 4.0 Crie um site simples usando HTML_CSS e JavaScript.pdf"
-          ]
-        },
-        {
-          title: "Lógica e Programação",
-          certifications: [
-            "Lógica de Programação (Bradesco)",
-            "Lógica de Programação (Cubos Academy)",
-            "Lógica em 5 semanas (EuCurso e AlfaMidia)",
-            "Lógica de Programação (Potência Tech e Cubo Academy)"
-          ],
-          documents: [
-            "Certificado Bradesco Logica de programcao.pdf",
-            "Certificado Cubos Acvademy Minicurso de logica de programacao.pdf",
-            "Certificado EuCurso e AlfaMidia Logica de programacao em cinco semanas.pdf",
-            "Certificado Potencia Tech e Cubo Academy_Logica de programacao.pdf"
-          ]
-        }
-      ]
-    },
-    ai: {
-      title: "Inteligência Artificial e Data Science",
-      icon: Brain,
-      items: [
-        {
-          title: "Microsoft AI e Machine Learning",
-          certifications: [
-            "Microsoft AI for Tech - Criando Prompts Inteligentes",
-            "Escrevendo prompts eficazes",
-            "Ferramentas e plataformas da Microsoft Essenciais",
-            "Introdução à engenharia de prompts"
-          ],
-          documents: [
-            "Certificado DIO Bootcamp Microsoft AI for Tech - Criando Prroompts Inteligentes.pdf",
-            "Certificado DIO Escrevendo prompt eficazes.pdf",
-            "Certificado DIO Ferramentas e plataformas da Microsoft Essenciais para a engenharia de prompts.pdf",
-            "Certificado DIO Introducao a engenharia de prompts.pdf"
-          ]
-        },
-        {
-          title: "Fundamentos e Aplicações de IA",
-          certifications: [
-            "Algoritmos e Aprendizado de Máquina",
-            "Aplicações e Impacto da IA no Mundo Atual",
-            "Introdução à Inteligência Artificial",
-            "Processamento de Linguagem Natural"
-          ],
-          documents: [
-            "Certificado DIO Algoritmos e aprendizado de maquina.pdf",
-            "Certificado DIO Aplicacoes e impacto da IA no mundo atual.pdf",
-            "Certificado DIO Introducao a Inteligencia artificial.pdf",
-            "Certificado DIO Processamento de linguagem natural.pdf"
-          ]
-        },
-        {
-          title: "Data Science e Analytics",
-          certifications: [
-            "Woman in Data Sciences (WiDS)",
-            "Data Universe III",
-            "Data Universe IV - Data Literacy IA",
-            "XPE Data Universe 8ED"
-          ],
-          documents: [
-            "Certificado de participacao Womam in data Sciences_Wids.pdf",
-            "Certificado IGTI Data Universe III.jpg",
-            "Certificado IGTI Data Universe IV_Data Literacy IA.pdf",
-            "Certificado XPE Data Universe 8ED.pdf"
-          ]
+          title: "Harvard CS50 - Introdução à Ciência da Computação",
+          description: "Certificado de Introdução à Ciência da Computação - Harvard University (CC50 Fundação)",
+          document: "Certificado de Introdução da Ciência da Computação de Harvard_CC50 Fundação.pdf"
         }
       ]
     },
@@ -169,14 +61,18 @@ const Certificates = (): ReactElement => {
             "Automação no Setor de Alimentos e Bebidas",
             "Robôs Colaborativos e Industriais",
             "Servo Acionamentos e Inversores",
-            "Visualização de Dados em Chão de Fábrica"
+            "Visualização de Dados em Chão de Fábrica",
+            "Aumento de Desempenho de Máquinas e Dispositivos",
+            "Importância de Escolher o Servo Correto"
           ],
           documents: [
-            "Certificado de participacao Webinar da Mitsubish_Como a automacao esta transformando a produtividade e eficiencia do agronegocio.PDF",
-            "Certificado de participacao Webinar da Mitsubish_Saiba como a automacao impulsiona o setor de alimentos e bebidas.PDF",
-            "Certificado de participacao Webinar da Mitsubish_Robos colaborativos ou industriais.PDF",
-            "Certificado de participacao Webinar da Mitsubish_Servo Acionamentos ou Inversor de frequencia onde e qual utilizar.PDF",
-            "Certificado de participacao Webinar da Mitsubish_Como conectar e visualizar os dados de chao de fabrica de formasimples e eficiente.jpg"
+            "Certificado de participação Webinar da Mitsubishi_Como a automação está transformando a produtividade e eficiência do agronegócio.PDF",
+            "Certificado de participação Webinar da Mitsubishi_Saiba como a automação impulsiona o setor de alimentos e bebidas.PDF",
+            "Certificado de participação Webinar da Mitsubishi_Robôs colaborativos ou industriais.PDF",
+            "Certificado de participação Webinar da Mitsubishi_Servo Acionamentos ou Inversor de frequência onde e qual utilizar.PDF",
+            "Certificado de participação Webinar da Mitsubishi_Como conectar e visualizar os dados de chão de fábrica de forma simples e eficiente.jpg",
+            "Certificado de participação Webinar da Mitsubishi_Aumente o desempenho de máquinas e dispositivos de montagem com servo acionamentos.pdf",
+            "Certificado de participação Webinar da Mitsubishi_A Importância de escolher o servo correto na sua aplicação.jpg"
           ]
         },
         {
@@ -189,48 +85,78 @@ const Certificates = (): ReactElement => {
             "Eletrônica Embarcada Automotiva"
           ],
           documents: [
-            "Curso Oficina Conectada_SETE Modulo 27 Gerenciamento eletrônico do motor 2.0 Multijet II.pdf",
-            "Curso Oficina Conectada_SETE Modulo 43 Gerenciamento eletrônico do motor Renault Kwid.pdf",
-            "Curso Oficina Conectada_SETE modulo 44 Hyndai HB20.pdf",
-            "Curso Oficina Conectada_SETE modulo 45 Mobi e Argo Gerenciamento eletronico dos motores Fireevo e Firefly.pdf",
-            "Curso Oficina Conectada_SETE modulo 55 Eletronica embarcada_Eletroeletronicaa automotiva.pdf"
+            "Curso Oficina Conectada_SETE Módulo 27 Gerenciamento eletrônico do motor 2.0 Multijet II.pdf",
+            "Curso Oficina Conectada_SETE Módulo 43 Gerenciamento eletrônico do motor Renault Kwid.pdf",
+            "Curso Oficina Conectada_SETE módulo 44 Hyundai HB20.pdf",
+            "Curso Oficina Conectada_SETE módulo 45 Mobi e Argo Gerenciamento eletrônico dos motores Fireevo e Firefly.pdf",
+            "Curso Oficina Conectada_SETE módulo 55 Eletrônica embarcada_Eletroeletrônica automotiva.pdf"
           ]
         }
       ]
     },
-    management: {
-      title: "Gestão e Liderança",
-      icon: Users,
+    ai: {
+      title: "Inteligência Artificial e Data Science",
+      icon: Brain,
       items: [
         {
-          title: "Gestão e Metodologias",
+          title: "Microsoft AI e Machine Learning",
           certifications: [
-            "SAP Fundamentos Básicos",
-            "Scrum Overview",
-            "Power BI - Visão Geral",
-            "ABNT NBR ISO/IEC 17025:2017",
-            "Gestão Exponencial Digital Day"
+            "Microsoft AI for Tech - Criando Prompts Inteligentes",
+            "Escrevendo prompts eficazes",
+            "Ferramentas e plataformas da Microsoft Essenciais",
+            "Introdução à engenharia de prompts",
+            "Introdução à criação de prompts Inteligentes com a Microsoft",
+            "Técnicas de engenharia de prompt",
+            "Documentando projetos automáticos utilizando IA"
           ],
           documents: [
-            "Certificado KA SAP Fundamentos basicos.pdf",
-            "Certificado KA Scrum Overiew.pdf",
-            "Certificado KA Visao Geral do Power BI.pdf",
-            "Certificado I minicurso sobre ABNT NBR ISO IEC 17025 2017 Biochemie.pdf",
-            "Certificado IGTI Gestao Expomicial Digital Day.pdf"
+            "Certificado DIO Bootcamp Microsoft AI for Tech - Criando Prompts Inteligentes.pdf",
+            "Certificado DIO Escrevendo prompt eficazes.pdf",
+            "Certificado DIO Ferramentas e plataformas da Microsoft Essenciais para a engenharia de prompts.pdf",
+            "Certificado DIO Introdução à engenharia de prompts.pdf",
+            "Certificado DIO Introdução à criação de prompts Inteligentes com a Microsoft.pdf",
+            "Certificado DIO Técnica de engenharia de prompt.pdf",
+            "Certificado DIO Documentando projetos automáticos utilizando IA.pdf"
           ]
         },
         {
-          title: "Liderança e Empreendedorismo",
+          title: "Fundamentos e Aplicações de IA",
           certifications: [
-            "Liderança Extraordinária (AVEC)",
-            "Desmistificando o Empreendedorismo (FIA)",
-            "Case Jungle XP (Saint Paul)",
-            "Gestão de Equipes e Liderança"
+            "Algoritmos e Aprendizado de Máquina",
+            "Aplicações e Impacto da IA no Mundo Atual",
+            "Introdução à Inteligência Artificial",
+            "Processamento de Linguagem Natural",
+            "Aplicações práticas da inteligência artificial",
+            "Introdução a modelo de linguagem baseados em transformers",
+            "Natura ou fake natty: Como vencer na era das IAs generativas"
           ],
           documents: [
-            "Certificado Lideraca Extraordinaria_AVEC.pdf",
-            "Certificado FIA Desmistificando o Empreendedorismo.pdf",
-            "Certificado Saint Paul Case Jungle XP_O uso de dados e a saude mental dos colaboradores .PDF"
+            "Certificado DIO Algoritmos e aprendizado de máquina.pdf",
+            "Certificado DIO Aplicações e impacto da IA no mundo atual.pdf",
+            "Certificado DIO Introdução à Inteligência artificial.pdf",
+            "Certificado DIO Processamento de linguagem natural.pdf",
+            "Certificado DIO Aplicações práticas da inteligência artificial.pdf",
+            "Certificado DIO Introdução a modelo de linguagem baseados em transformers.pdf",
+            "Certificado DIO Natura ou fake natty_Como vencer na eras das IAs generativas.pdf"
+          ]
+        },
+        {
+          title: "Data Science e Analytics",
+          certifications: [
+            "Woman in Data Sciences (WiDS)",
+            "Data Universe III",
+            "Data Universe IV - Data Literacy IA",
+            "XPE Data Universe 8ED",
+            "AI Today",
+            "Utilizando prompt para gerar insights relatórios de vendas"
+          ],
+          documents: [
+            "Certificado de participação Woman in data Sciences_Wids.pdf",
+            "Certificado IGTI Data Universe III.jpg",
+            "Certificado IGTI Data Universe IV_Data Literacy IA.pdf",
+            "Certificado XPE Data Universe 8ED.pdf",
+            "Certificado IGTI AI Today.pdf",
+            "Certificado DIO Utilizando prompt para gerar insights relatórios de vendas.pdf"
           ]
         }
       ]
@@ -238,7 +164,7 @@ const Certificates = (): ReactElement => {
   };
 
   return (
-    <section id="certificates" className="py-20 bg-slate-900">
+    <section id="certificates" className="py-20 bg-slate-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
@@ -253,7 +179,7 @@ const Certificates = (): ReactElement => {
           {Object.entries(certifications).map(([key, section]) => {
             const IconComponent = section.icon;
             return (
-              <div key={key} className="bg-slate-800 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300">
+              <div key={key} className="bg-slate-900 rounded-xl p-6 hover:bg-slate-900/70 transition-all duration-300">
                 <div className="flex items-center mb-6">
                   <IconComponent className="w-8 h-8 text-blue-400 mr-3" />
                   <h3 className="text-2xl font-semibold text-white">{section.title}</h3>
@@ -266,7 +192,9 @@ const Certificates = (): ReactElement => {
                       {isBasicCertification(item) && (
                         <>
                           <p className="text-slate-300 mb-3">{item.description}</p>
-                          <p className="text-sm text-slate-400">{item.document}</p>
+                          {item.document && (
+                            <p className="text-sm text-slate-400">{item.document}</p>
+                          )}
                         </>
                       )}
                       {isDetailedCertification(item) && (
@@ -277,7 +205,7 @@ const Certificates = (): ReactElement => {
                                 <span className="text-blue-400 mr-2">•</span>
                                 <span>{cert}</span>
                               </span>
-                              {item.documents[certIndex] && (
+                              {item.documents && item.documents[certIndex] && (
                                 <span className="text-sm text-slate-400 ml-4">{item.documents[certIndex]}</span>
                               )}
                             </li>

@@ -17,20 +17,14 @@ const Header = () => {
               <a href="#home" className="text-slate-300 hover:text-white transition-colors duration-200 px-3 py-2 text-sm font-medium">
                 Início
               </a>
-              <a href="#skills" className="text-slate-300 hover:text-white transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                Habilidades
-              </a>
-              <a href="#projects" className="text-slate-300 hover:text-white transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                Projetos
-              </a>
               <a href="#experience" className="text-slate-300 hover:text-white transition-colors duration-200 px-3 py-2 text-sm font-medium">
                 Experiência
               </a>
-              <a href="#contact" className="text-slate-300 hover:text-white transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                Contato
-              </a>
               <a href="#certificates" className="text-slate-300 hover:text-white transition-colors duration-200 px-3 py-2 text-sm font-medium">
                 Certificações
+              </a>
+              <a href="#contact" className="text-slate-300 hover:text-white transition-colors duration-200 px-3 py-2 text-sm font-medium">
+                Contato
               </a>
             </div>
           </nav>

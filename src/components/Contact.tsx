@@ -48,7 +48,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-white">Email</p>
-                    <p>joao.developer@email.com</p>
+                    <p>wagnerffreitas1973@gmail.com</p>
                   </div>
                 </div>
                 
@@ -58,7 +58,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-white">Telefone</p>
-                    <p>+55 (11) 99999-9999</p>
+                    <p>(21) 99235-0416</p>
                   </div>
                 </div>
                 
@@ -68,7 +68,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-white">Localização</p>
-                    <p>São Paulo, Brasil</p>
+                    <p>Rio de Janeiro, Brasil</p>
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold text-white mb-4">Conecte-se Comigo</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/WagnerFFreitas" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all duration-300 hover:scale-110"
@@ -87,7 +87,7 @@ const Contact = () => {
                   <Github className="w-6 h-6" />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://linkedin.com/in/wagner-ferreira-freitas-2ba65269" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all duration-300 hover:scale-110"
@@ -95,12 +95,12 @@ const Contact = () => {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a 
-                  href="https://twitter.com" 
+                  href="mailto:wagnerffreitas1973@gmail.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all duration-300 hover:scale-110"
                 >
-                  <Twitter className="w-6 h-6" />
+                  <Mail className="w-6 h-6" />
                 </a>
               </div>
             </div>

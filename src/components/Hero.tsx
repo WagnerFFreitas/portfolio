@@ -18,12 +18,12 @@ const Hero = () => {
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
-              João Developer
+              Wagner Ferreira Freitas
             </span>
           </h1>
           
           <p className="text-xl sm:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Desenvolvedor Full Stack apaixonado por criar experiências digitais excepcionais com tecnologias modernas
+            Engenheiro de Computação especializado em Cloud, IA e Automação Industrial
           </p>
           
           <div className="flex items-center justify-center mb-8">

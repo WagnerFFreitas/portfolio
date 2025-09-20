@@ -11,7 +11,7 @@ const Footer = () => {
           <p className="text-slate-400 flex items-center justify-center">
             Feito com 
             <Heart className="w-4 h-4 mx-2 text-red-500 animate-pulse" /> 
-            por João Developer • {currentYear}
+            por Wagner Ferreira Freitas • {currentYear}
           </p>
           <p className="text-slate-500 text-sm mt-2">
             Todos os direitos reservados. Este portfolio foi criado com React, TypeScript e Tailwind CSS.
