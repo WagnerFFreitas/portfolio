@@ -56,41 +56,13 @@ const Certificates = (): ReactElement => {
       items: [
         {
           title: "Automação Industrial (Mitsubishi)",
-          certifications: [
-            "Automação e Produtividade no Agronegócio",
-            "Automação no Setor de Alimentos e Bebidas",
-            "Robôs Colaborativos e Industriais",
-            "Servo Acionamentos e Inversores",
-            "Visualização de Dados em Chão de Fábrica",
-            "Aumento de Desempenho de Máquinas e Dispositivos",
-            "Importância de Escolher o Servo Correto"
-          ],
-          documents: [
-            "Certificado de participação Webinar da Mitsubishi_Como a automação está transformando a produtividade e eficiência do agronegócio.PDF",
-            "Certificado de participação Webinar da Mitsubishi_Saiba como a automação impulsiona o setor de alimentos e bebidas.PDF",
-            "Certificado de participação Webinar da Mitsubishi_Robôs colaborativos ou industriais.PDF",
-            "Certificado de participação Webinar da Mitsubishi_Servo Acionamentos ou Inversor de frequência onde e qual utilizar.PDF",
-            "Certificado de participação Webinar da Mitsubishi_Como conectar e visualizar os dados de chão de fábrica de forma simples e eficiente.jpg",
-            "Certificado de participação Webinar da Mitsubishi_Aumente o desempenho de máquinas e dispositivos de montagem com servo acionamentos.pdf",
-            "Certificado de participação Webinar da Mitsubishi_A Importância de escolher o servo correto na sua aplicação.jpg"
-          ]
+          description: "Especialização em automação industrial com foco em PLCs, robótica, servo acionamentos e visualização de dados em chão de fábrica. Conhecimento em aplicações para agronegócio e setor alimentício.",
+          document: "Webinars Mitsubishi - Automação Industrial (7 certificados)"
         },
         {
           title: "Eletrônica Automotiva (SETE)",
-          certifications: [
-            "Gerenciamento Eletrônico Motor 2.0 Multijet II",
-            "Gerenciamento Eletrônico Renault Kwid",
-            "Hyundai HB20",
-            "Mobi e Argo - Motores Fireevo e Firefly",
-            "Eletrônica Embarcada Automotiva"
-          ],
-          documents: [
-            "Curso Oficina Conectada_SETE Módulo 27 Gerenciamento eletrônico do motor 2.0 Multijet II.pdf",
-            "Curso Oficina Conectada_SETE Módulo 43 Gerenciamento eletrônico do motor Renault Kwid.pdf",
-            "Curso Oficina Conectada_SETE módulo 44 Hyundai HB20.pdf",
-            "Curso Oficina Conectada_SETE módulo 45 Mobi e Argo Gerenciamento eletrônico dos motores Fireevo e Firefly.pdf",
-            "Curso Oficina Conectada_SETE módulo 55 Eletrônica embarcada_Eletroeletrônica automotiva.pdf"
-          ]
+          description: "Especialização em sistemas eletrônicos automotivos, gerenciamento de motores e eletrônica embarcada. Conhecimento em diagnóstico e manutenção de veículos modernos.",
+          document: "Curso Oficina Conectada SETE (5 módulos)"
         }
       ]
     },
@@ -100,64 +72,18 @@ const Certificates = (): ReactElement => {
       items: [
         {
           title: "Microsoft AI e Machine Learning",
-          certifications: [
-            "Microsoft AI for Tech - Criando Prompts Inteligentes",
-            "Escrevendo prompts eficazes",
-            "Ferramentas e plataformas da Microsoft Essenciais",
-            "Introdução à engenharia de prompts",
-            "Introdução à criação de prompts Inteligentes com a Microsoft",
-            "Técnicas de engenharia de prompt",
-            "Documentando projetos automáticos utilizando IA"
-          ],
-          documents: [
-            "Certificado DIO Bootcamp Microsoft AI for Tech - Criando Prompts Inteligentes.pdf",
-            "Certificado DIO Escrevendo prompt eficazes.pdf",
-            "Certificado DIO Ferramentas e plataformas da Microsoft Essenciais para a engenharia de prompts.pdf",
-            "Certificado DIO Introdução à engenharia de prompts.pdf",
-            "Certificado DIO Introdução à criação de prompts Inteligentes com a Microsoft.pdf",
-            "Certificado DIO Técnica de engenharia de prompt.pdf",
-            "Certificado DIO Documentando projetos automáticos utilizando IA.pdf"
-          ]
+          description: "Especialização em engenharia de prompts, ferramentas Microsoft AI e desenvolvimento de soluções inteligentes. Foco em criação de prompts eficazes e documentação automatizada.",
+          document: "Bootcamp Microsoft AI for Tech - DIO (7 certificados)"
         },
         {
           title: "Fundamentos e Aplicações de IA",
-          certifications: [
-            "Algoritmos e Aprendizado de Máquina",
-            "Aplicações e Impacto da IA no Mundo Atual",
-            "Introdução à Inteligência Artificial",
-            "Processamento de Linguagem Natural",
-            "Aplicações práticas da inteligência artificial",
-            "Introdução a modelo de linguagem baseados em transformers",
-            "Natura ou fake natty: Como vencer na era das IAs generativas"
-          ],
-          documents: [
-            "Certificado DIO Algoritmos e aprendizado de máquina.pdf",
-            "Certificado DIO Aplicações e impacto da IA no mundo atual.pdf",
-            "Certificado DIO Introdução à Inteligência artificial.pdf",
-            "Certificado DIO Processamento de linguagem natural.pdf",
-            "Certificado DIO Aplicações práticas da inteligência artificial.pdf",
-            "Certificado DIO Introdução a modelo de linguagem baseados em transformers.pdf",
-            "Certificado DIO Natura ou fake natty_Como vencer na eras das IAs generativas.pdf"
-          ]
+          description: "Base sólida em algoritmos de machine learning, processamento de linguagem natural e modelos baseados em transformers. Conhecimento em aplicações práticas e impacto da IA.",
+          document: "Cursos DIO - Fundamentos de IA (7 certificados)"
         },
         {
           title: "Data Science e Analytics",
-          certifications: [
-            "Woman in Data Sciences (WiDS)",
-            "Data Universe III",
-            "Data Universe IV - Data Literacy IA",
-            "XPE Data Universe 8ED",
-            "AI Today",
-            "Utilizando prompt para gerar insights relatórios de vendas"
-          ],
-          documents: [
-            "Certificado de participação Woman in data Sciences_Wids.pdf",
-            "Certificado IGTI Data Universe III.jpg",
-            "Certificado IGTI Data Universe IV_Data Literacy IA.pdf",
-            "Certificado XPE Data Universe 8ED.pdf",
-            "Certificado IGTI AI Today.pdf",
-            "Certificado DIO Utilizando prompt para gerar insights relatórios de vendas.pdf"
-          ]
+          description: "Experiência em análise de dados, data literacy e geração de insights com IA. Participação em eventos de data science e aplicação prática em relatórios de vendas.",
+          document: "Eventos IGTI, XPE e WiDS (6 certificados)"
         }
       ]
     }
