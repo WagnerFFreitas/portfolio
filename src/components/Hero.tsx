@@ -51,8 +51,8 @@ const Hero = () => {
             <button
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/curriculum-wagner-freitas.pdf';
-                link.download = 'Curriculo-Wagner-Ferreira-Freitas.pdf';
+                link.href = '/curriculo-wagner-freitas.txt';
+                link.download = 'Curriculo-Wagner-Ferreira-Freitas.txt';
                 link.target = '_blank';
                 document.body.appendChild(link);
                 link.click();
