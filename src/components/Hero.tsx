@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, Download } from 'lucide-react';
+import { generateCurriculumPDF } from '../utils/generatePDF';
 
 const Hero = () => {
   return (
@@ -49,19 +50,11 @@ const Hero = () => {
             </a>
             
             <button
-              onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/curriculo-wagner-freitas.txt';
-                link.download = 'Curriculo-Wagner-Ferreira-Freitas.txt';
-                link.target = '_blank';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
+              onClick={generateCurriculumPDF}
               className="inline-flex items-center px-8 py-4 border-2 border-slate-600 hover:border-slate-500 text-slate-300 hover:text-white font-semibold rounded-lg transition-all duration-300 hover:bg-slate-800"
             >
               <Download className="mr-2 w-5 h-5" />
-              Download Currículo
+              Download Currículo (PDF)
             </button>
           </div>
         </div>
