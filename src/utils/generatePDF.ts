@@ -51,12 +51,12 @@ export const generateCurriculumPDF = () => {
 
   // Contato
   addSection('CONTATO');
-  addText('📧 Email: wagnerffreitas1973@gmail.com');
-  addText('📱 Telefone: (21) 99235-0416');
-  addText('🔗 LinkedIn: linkedin.com/in/wagner-ferreira-freitas-2ba65269');
-  addText('💻 GitHub: github.com/WagnerFFreitas');
-  addText('📍 Localização: Rio de Janeiro, RJ');
-  addText('♿ Pessoa com Deficiência (PCD)');
+  addText('Email: wagnerffreitas1973@gmail.com');
+  addText('Telefone: (21) 99235-0416');
+  addText('LinkedIn: linkedin.com/in/wagner-ferreira-freitas-2ba65269');
+  addText('GitHub: github.com/WagnerFFreitas');
+  addText('Localizacao: Rio de Janeiro, RJ');
+  addText('Pessoa com Deficiencia (PCD)');
 
   // Resumo Profissional
   addSection('RESUMO PROFISSIONAL');
@@ -64,98 +64,98 @@ export const generateCurriculumPDF = () => {
 
   // Formação Acadêmica
   addSection('FORMAÇÃO ACADÊMICA');
-  addText('🎓 ENGENHARIA DA COMPUTAÇÃO', 12, true);
+  addText('ENGENHARIA DA COMPUTACAO', 12, true);
   addText('Universidade Candido Mendes, Rio de Janeiro - RJ');
-  addText('Conclusão: 2024 | Colação de Grau: 2025');
+  addText('Conclusao: 2024 | Colacao de Grau: 2025');
   
-  addText('🎓 HARVARD CS50 - INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO', 12, true);
+  addText('HARVARD CS50 - INTRODUCAO A CIENCIA DA COMPUTACAO', 12, true);
   addText('Harvard University (CC50 Fundação)');
-  addText('• Algoritmos e Estruturas de Dados');
-  addText('• Programação em C e Python');
+  addText('- Algoritmos e Estruturas de Dados');
+  addText('- Programacao em C e Python');
   addText('• SQL e Banco de Dados');
-  addText('• Desenvolvimento Web (HTML, CSS, JavaScript)');
+  addText('- Desenvolvimento Web (HTML, CSS, JavaScript)');
 
   // Experiência Profissional
-  addSection('EXPERIÊNCIA PROFISSIONAL');
+  addSection('EXPERIENCIA PROFISSIONAL');
   
-  addText('🏢 MULT TEC ASSISTÊNCIA TÉCNICA', 12, true);
-  addText('Prestador de Serviço Autônomo como Técnico de TI e Eletrônica');
-  addText('📅 2020 - Atual | 📍 Rio de Janeiro, RJ');
+  addText('MULT TEC ASSISTENCIA TECNICA', 12, true);
+  addText('Prestador de Servico Autonomo como Tecnico de TI e Eletronica');
+  addText('2020 - Atual | Rio de Janeiro, RJ');
   addText('Especialista em sistemas de CFTV, suporte técnico em TI e manutenção eletrônica com foco em soluções de segurança e monitoramento.');
-  addText('• Diagnóstico e resolução de problemas de hardware e software');
-  addText('• Implementação e manutenção de sistemas de CFTV');
-  addText('• Reparos em aparelhos eletrônicos');
+  addText('- Diagnostico e resolucao de problemas de hardware e software');
+  addText('- Implementacao e manutencao de sistemas de CFTV');
+  addText('- Reparos em aparelhos eletronicos');
 
-  addText('🏢 SUPORTE INFORMÁTICA LTDA. (GRUPO GLOBEX - PONTO FRIO)', 12, true);
-  addText('Técnico de Software, Rede e Help Desk');
-  addText('📅 2018 - 2020 | 📍 Rio de Janeiro, RJ');
-  addText('• Suporte técnico (Help Desk) para usuários nas lojas e depósito central');
-  addText('• Manutenção de infraestrutura de rede local');
-  addText('• Resolução de incidentes de software e conectividade');
+  addText('SUPORTE INFORMATICA LTDA. (GRUPO GLOBEX - PONTO FRIO)', 12, true);
+  addText('Tecnico de Software, Rede e Help Desk');
+  addText('2018 - 2020 | Rio de Janeiro, RJ');
+  addText('- Suporte tecnico (Help Desk) para usuarios nas lojas e deposito central');
+  addText('- Manutencao de infraestrutura de rede local');
+  addText('- Resolucao de incidentes de software e conectividade');
 
-  addText('🏢 DATA DUQUE INFORMÁTICA', 12, true);
-  addText('Instrutor de TI e Técnico de Manutenção');
-  addText('📅 2016 - 2018 | 📍 Rio de Janeiro, RJ');
-  addText('• Ministração de treinamentos em Pacote Office, CorelDraw e Photoshop');
-  addText('• Montagem e manutenção de computadores');
-  addText('• Implementação de redes estruturadas');
+  addText('DATA DUQUE INFORMATICA', 12, true);
+  addText('Instrutor de TI e Tecnico de Manutencao');
+  addText('2016 - 2018 | Rio de Janeiro, RJ');
+  addText('- Ministracao de treinamentos em Pacote Office, CorelDraw e Photoshop');
+  addText('- Montagem e manutencao de computadores');
+  addText('- Implementacao de redes estruturadas');
 
-  addText('🏢 EXTERNATO CRUZEIRO DO SUL', 12, true);
+  addText('EXTERNATO CRUZEIRO DO SUL', 12, true);
   addText('Professor');
-  addText('📅 2014 - 2016 | 📍 Rio de Janeiro, RJ');
-  addText('• Ensino de disciplinas de informática');
-  addText('• Desenvolvimento de material didático personalizado');
-  addText('• Acompanhamento pedagógico individualizado');
-
-  addText('🏢 CURSO ELETROHM', 12, true);
-  addText('Instrutor de Equipamentos de Áudio');
-  addText('📅 2006 - 2014 | 📍 Rio de Janeiro, RJ');
-  addText('• Ensino de eletrônica básica e avançada');
-  addText('• Instrução especializada em equipamentos de áudio');
-  addText('• Capacitação de técnicos em eletrônica de áudio');
+  addText('2014 - 2016 | Rio de Janeiro, RJ');
+  addText('- Ensino de disciplinas de informatica');
+  addText('- Desenvolvimento de material didatico personalizado');
+  addText('- Acompanhamento pedagogico individualizado');
+  addText('- Gestao de turmas e avaliacao de desempenho academico');
+  addText('CURSO ELETROHM', 12, true);
+  addText('Instrutor de Equipamentos de Audio');
+  addText('2006 - 2014 | Rio de Janeiro, RJ');
+  addText('- Ensino de eletronica basica e avancada');
+  addText('- Instrucao especializada em equipamentos de audio');
+  addText('- Capacitacao de tecnicos em eletronica de audio');
 
   // Certificações
-  addSection('CERTIFICAÇÕES E FORMAÇÃO COMPLEMENTAR');
+  addSection('CERTIFICACOES E FORMACAO COMPLEMENTAR');
   
-  addText('🔧 AUTOMAÇÃO E SISTEMAS', 12, true);
-  addText('• Automação Industrial (Mitsubishi): PLCs, robótica, servo acionamentos');
-  addText('• Eletrônica Automotiva (SETE): Sistemas eletrônicos, gerenciamento de motores');
+  addText('AUTOMACAO E SISTEMAS', 12, true);
+  addText('- Automacao Industrial (Mitsubishi): PLCs, robotica, servo acionamentos');
+  addText('- Eletronica Automotiva (SETE): Sistemas eletronicos, gerenciamento de motores');
   
-  addText('🤖 INTELIGÊNCIA ARTIFICIAL E DATA SCIENCE', 12, true);
-  addText('• Microsoft AI: Engenharia de prompts, ferramentas Microsoft AI');
-  addText('• Fundamentos de IA: Machine learning, processamento de linguagem natural');
-  addText('• Data Science: Análise de dados, data literacy, geração de insights');
+  addText('INTELIGENCIA ARTIFICIAL E DATA SCIENCE', 12, true);
+  addText('- Microsoft AI: Engenharia de prompts, ferramentas Microsoft AI');
+  addText('- Fundamentos de IA: Machine learning, processamento de linguagem natural');
+  addText('- Data Science: Analise de dados, data literacy, geracao de insights');
 
-  addText('☁️ CLOUD E SEGURANÇA', 12, true);
-  addText('• Microsoft Azure Fundamentals (AZ-900)');
-  addText('• Microsoft Security, Compliance and Identity (SC-900)');
-  addText('• AWS Discovery Day - Cloud Practitioner Essentials');
-  addText('• Cisco CCNA R&S - Redes de Computadores');
+  addText('CLOUD E SEGURANCA', 12, true);
+  addText('- Microsoft Azure Fundamentals (AZ-900)');
+  addText('- Microsoft Security, Compliance and Identity (SC-900)');
+  addText('- AWS Discovery Day - Cloud Practitioner Essentials');
+  addText('- Cisco CCNA R&S - Redes de Computadores');
 
-  addText('💻 DESENVOLVIMENTO E PROGRAMAÇÃO', 12, true);
-  addText('• Python: Automação, Data Science, FastAPI, Django');
-  addText('• JavaScript/TypeScript: React, Node.js, Next.js');
-  addText('• SQL: MySQL, PostgreSQL, SQL Server');
-  addText('• Git & DevOps: GitHub, GitLab, CI/CD, Docker');
+  addText('DESENVOLVIMENTO E PROGRAMACAO', 12, true);
+  addText('- Python: Automacao, Data Science, FastAPI, Django');
+  addText('- JavaScript/TypeScript: React, Node.js, Next.js');
+  addText('- SQL: MySQL, PostgreSQL, SQL Server');
+  addText('- Git & DevOps: GitHub, GitLab, CI/CD, Docker');
 
   // Projetos
   addSection('PROJETOS E REPOSITÓRIOS');
-  addText('🎮 PROJETOS EM DESTAQUE:', 12, true);
-  addText('• Jogos - Jogo da Forca desenvolvido com JavaScript, HTML e CSS');
-  addText('• Bíblia - Aplicação web para propagar a Palavra de Deus');
+  addText('PROJETOS EM DESTAQUE:', 12, true);
+  addText('- Jogos - Jogo da Forca desenvolvido com JavaScript, HTML e CSS');
+  addText('- Biblia - Aplicacao web para propagar a Palavra de Deus');
   
-  addText('📚 REPOSITÓRIOS DE ESTUDO:', 12, true);
-  addText('• Curso Eurocurso e Alfamidia (HTML, CSS, JavaScript, PHP, MySQL)');
-  addText('• Curso Cultura Educacional (HTML, CSS, Web Development)');
-  addText('• Desafios DIO (Bootcamp, Programação, Desafios)');
+  addText('REPOSITORIOS DE ESTUDO:', 12, true);
+  addText('- Curso Eurocurso e Alfamidia (HTML, CSS, JavaScript, PHP, MySQL)');
+  addText('- Curso Cultura Educacional (HTML, CSS, Web Development)');
+  addText('- Desafios DIO (Bootcamp, Programacao, Desafios)');
 
   // Informações Adicionais
-  addSection('INFORMAÇÕES ADICIONAIS');
-  addText('• Pessoa com Deficiência (PCD) - Comprometido com diversidade e inclusão');
-  addText('• Experiência internacional (2 anos nos Estados Unidos)');
-  addText('• Certificações oficiais Microsoft Azure, AWS e Harvard CS50');
-  addText('• Portfólio de projetos disponível no GitHub: github.com/WagnerFFreitas');
-  addText('• Fluência em inglês técnico e conversacional');
+  addSection('INFORMACOES ADICIONAIS');
+  addText('- Pessoa com Deficiencia (PCD) - Comprometido com diversidade e inclusao');
+  addText('- Experiencia internacional (2 anos nos Estados Unidos)');
+  addText('- Certificacoes oficiais Microsoft Azure, AWS e Harvard CS50');
+  addText('- Portfolio de projetos disponivel no GitHub: github.com/WagnerFFreitas');
+  addText('- Fluencia em ingles tecnico e conversacional');
 
   // Salvar o PDF
   doc.save('Curriculo-Wagner-Ferreira-Freitas.pdf');
